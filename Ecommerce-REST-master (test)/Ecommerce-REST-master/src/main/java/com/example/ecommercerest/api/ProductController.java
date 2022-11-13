@@ -1,12 +1,11 @@
 package com.example.ecommercerest.api;
 
-import com.example.ecommercerest.model.Product;
+import com.example.ecommercerest.model.JsonConverter;
 import com.example.ecommercerest.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RequestMapping("api/v1/product")
 @RestController
@@ -20,7 +19,29 @@ public class ProductController {
     }
 
     @PostMapping
-    public void addProduct(@RequestBody Product product) {
+    public void addProduct(@RequestBody JsonConverter.Product product) {
         productService.addProduct(product);
     }
+
+    @GetMapping
+    public List<JsonConverter.Product> getAllProducts() {
+        return productService.getAllProducts();
+    }
+
+    @GetMapping(path = "/{name}")
+    public JsonConverter.Product getProductByName(@PathVariable("name") String name) {
+        return productService.getProductByName(name)
+                .orElse(null);
+    }
+
+    @DeleteMapping(path = "{name}")
+    public void deleteProductByName(@PathVariable("name") String name) {
+        productService.deleteProduct(name);
+    }
+
+    @PutMapping(path = "{name}")
+    public void updateProduct(@PathVariable("name") String name, @RequestBody JsonConverter.Product productToUpdate) {
+        productService.updateProduct(name, productToUpdate);
+    }
+
 }
