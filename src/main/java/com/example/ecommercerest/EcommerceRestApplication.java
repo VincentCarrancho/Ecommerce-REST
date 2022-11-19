@@ -12,10 +12,14 @@ public class EcommerceRestApplication {
     public static void main(String[] args) {
         SpringApplication.run(EcommerceRestApplication.class, args);
     }
+
+    /**
+     * This is the main endpoint, this checks the connection
+     * @return
+     */
     @GetMapping
     public String checkConnection() {
         System.out.println("Connected To REST Client");
         return "Connected To REST Client";
     }
-
 }

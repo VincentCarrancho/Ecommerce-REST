@@ -1,16 +1,32 @@
 package com.example.ecommercerest.Controllers;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.example.ecommercerest.Models.Product;
+import org.springframework.web.bind.annotation.*;
+import java.util.ArrayList;
 
+@RequestMapping("products")
 @RestController
-@RequestMapping(path = "api/v1/product")
 public class ProductController {
 
-    @GetMapping
-    public String checkConnection() {
-        System.out.println("Connected to Product Mapping");
-        return "This is mapped to product controller";
+    @GetMapping("/allProducts")
+    public ArrayList<Product> getAllProducts() {
+        ArrayList<Product> productArray = new ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            Product product = new Product("Vincent", "Lorem", 12.23, "Image");
+            productArray.add(product);
+        }
+
+        return productArray;
+
+    }
+
+    @GetMapping("/testAPI")
+    public Product testProductAPI(@RequestParam String name, @RequestParam String desc, @RequestParam double price, @RequestParam String imageURL) {
+        return new Product(name, desc, price, imageURL);
+    }
+
+
+    public String parseProducts() {
+        return "";
     }
 }
