@@ -1,0 +1,63 @@
+{
+  "products": [
+    {
+      "name": "Sony A6000",
+      "desc": "Sleek and quick, the Sony a6000 is a versatile APS-C mirrorless camera offering a well-balanced combination of apt stills performance and Full HD video capabilities, along with fast AF performance and intuitive handling.",
+      "price": 549.99,
+      "image": "https://www.dpreview.com/files/p/E~products/sony_a6000/shots/068c499f89b049b5a3d26be9510f7c27.png"
+    },
+    {
+      "name": "Nike Air Jordan Low",
+      "desc": "The Air Jordan 1 Low OG remakes the classic sneaker with new colors and textures. Premium materials and accents give fresh expression to an all-time favorite.",
+      "price": 139.99,
+      "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/8e01e221-8c4e-4964-97aa-828474f5fe3f/air-jordan-1-elevate-low-se-womens-shoes-1W20F7.png"
+    },
+    {
+      "name": "PlayStation 5",
+      "desc": "Experience lightning-fast loading with an ultra-high speed SSD, deeper immersion with support for haptic feedback1, adaptive triggers1 and 3D Audio*, and an all-new generation of incredible PlayStation games.",
+      "price": 399.99,
+      "image": "https://www.klarna.com/sac/product/1200x630/3002671209/Sony-PlayStation-5.jpgg"
+    },
+    {
+      "name": "Jimmy Butler Funko Pop",
+      "desc": "From Heat, Jimmy Butler (Black Jersey), as a stylized Pop! vinyl from Funko! Figure stands 3 3/4 inches and comes in a window display box.",
+      "price": 12.99,
+      "image": "https://bbts1.azureedge.net/images/p/full/2021/09/9e9d707f-ab2c-4454-b76f-5326bf0114f3.jpg"
+    },
+    {
+      "name": "Adidas Yeezy Boost",
+      "desc": "The YEEZY BOOST 350 V2 features an upper composed of re-engineered Primeknit. The post-dyed monofilament side stripe is woven into the upper.",
+      "price": 339.99,
+      "image": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/079/441/022/original/1059342_01.jpg.jpeg?action=crop&width=750"
+    },
+    {
+      "name": "iPhone 14",
+      "desc": "21% more screen. Now that's big. iPhone 14 Plus has a supersized Super Retina XDR display.",
+      "price": 1129.99,
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-7inch-deeppurple?wid=2560&hei=1440&fmt=jpeg&qlt=95&.v=1663703841896"
+    },
+    {
+      "name": "Xbox Series X",
+      "desc": "Discover the fastest, most powerful Xbox ever with the Xbox Series X. Enjoy 4K gaming at up to 120 frames per second on this next generation video game console.",
+      "price": 499.99,
+      "image": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4mRni?ver=a707"
+    },
+    {
+      "name": "Sony XM4 Wireless Noise Cancelling Headphones",
+      "desc": "Sony WH-1000XM4 Wireless Noise Canceling Over-the-Ear Headphone in black. Wireless Bluetooth streaming and Smartphone compatibility for hands-free.",
+      "image": "https://i.insider.com/5f36a9e4e89ebf001f044924?width=1136&format=jpeg"
+    },
+    {
+      "name": "Lego Millennium Falcon",
+      "desc": "LEGO® Star Wars™ Millennium Falcon™ · Relive the Star Wars™ saga. · Go inside for more adventure! · Open the cockpit. · Defeat the First Order. · True to the saga.",
+      "price": 849.99,
+      "image": "https://www.lego.com/cdn/cs/set/assets/blt95c35d4ed5665a49/75192.jpg?fit=bounds&format=jpg&quality=80&width=528&height=528&dpr=1"
+    },
+    {
+      "name": "RTX 4090",
+      "desc": "The NVIDIA® GeForce RTX™ 4090 is the ultimate GeForce GPU. It brings an enormous leap in performance, efficiency, and AI-powered graphics.",
+      "price": 1699.99,
+      "image": "https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4090/geforce-ada-4090-web-og-1200x630.jpg"
+    }
+  ]
+}
