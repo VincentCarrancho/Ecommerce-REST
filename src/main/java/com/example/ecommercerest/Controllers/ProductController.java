@@ -2,10 +2,7 @@ package com.example.ecommercerest.Controllers;
 
 import com.example.ecommercerest.Models.Product;
 import com.google.gson.Gson;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.io.Reader;
 import java.nio.file.Files;
@@ -16,7 +13,12 @@ import java.util.Map;
 @RestController
 public class ProductController {
 
+    /**
+     * The CORS is set to localhosts
+     * @return JSON of all products in the products JSON
+     */
     @GetMapping("/allProducts")
+    @CrossOrigin(origins = {"http://127.0.0.1:5173", "http://127.0.0.1:3000"})
     public Map<?, ?> getAllProducts() {
         Map<?,?> map = null;
         try {
